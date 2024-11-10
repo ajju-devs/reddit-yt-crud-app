@@ -32,7 +32,7 @@ A Streamlit-based interface for creating, reading, updating, and deleting Reddit
 4. **Configure Streamlit Ensure the config.toml file in .streamlit folder is correctly set:**
    ```toml
    [server]
-headless = true
-enableCORS = true
-enableXsrfProtection = true
-port = 8501
+   headless = true
+   enableCORS = true
+   enableXsrfProtection = true
+   port = 8501
