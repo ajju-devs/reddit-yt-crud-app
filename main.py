@@ -29,13 +29,11 @@ def read_recent_posts(reddit, subreddit_name, limit=5, username=None):
     subreddit = reddit.subreddit(subreddit_name)
     posts = []
     count = 0
-    
-    # If limit is None, set it to a very large number
+
     if limit is None:
         limit = float('inf')
     
     for post in subreddit.new(limit=limit):
-        # Only add posts from the logged-in username
         if post.author and post.author.name == username:
             posts.append({
                 "post_id": post.id,
@@ -70,13 +68,12 @@ def login_to_reddit(client_id, client_secret, user_agent, username, password):
             username=username,
             password=password
         )
-        reddit.user.me()  # Test login
+        reddit.user.me()  
         return reddit
     except Exception as e:
         st.error(f"Login failed: {e}")
         return None
 
-# Titles and hyperlink display with color customization
 st.markdown("""
 <style>
     .title {
@@ -133,13 +130,11 @@ st.markdown("""
 
 st.markdown('<div class="title">Reddit CRUD App Interface</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">ProdigalAI Internship Project</div>', unsafe_allow_html=True)
-st.markdown('<a href="https://github.com/ajju-devs" target="_blank" class="link">For GitHub Repository Click Here</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://github.com/ajju-devs/reddit-crud-app" target="_blank" class="link">For GitHub Repository Click Here</a>', unsafe_allow_html=True)
 
-# Display logged-in username if available
 if st.session_state['username']:
     st.markdown(f'<div class="username-display">Logged in as: {st.session_state["username"]}</div>', unsafe_allow_html=True)
 
-# Input for Reddit credentials with "Edit credentials" button
 if not st.session_state['credentials_entered'] or st.button("Edit credentials"):
     with st.form("credentials_form", clear_on_submit=True):
         client_id = st.text_input("Client ID", type="password")
@@ -154,20 +149,19 @@ if not st.session_state['credentials_entered'] or st.button("Edit credentials"):
         if reddit:
             st.session_state['reddit'] = reddit
             st.session_state['credentials_entered'] = True
-            st.session_state['username'] = username  # Store the username for display
+            st.session_state['username'] = username 
             st.success("Logged in successfully!")
             time.sleep(2)
-            st.experimental_rerun()  # Rerun to hide credentials section
+            st.experimental_rerun() 
 
-# Main app features load only if credentials are validated
+# Main app features
 if st.session_state['credentials_entered']:
-    reddit = st.session_state['reddit']  # Use stored Reddit instance
+    reddit = st.session_state['reddit'] 
     st.write("Use this interface to create, read, update, and delete posts on Reddit.")
 
-    # Editable subreddit name
     subreddit_name_create = st.text_input("Enter Subreddit Name for Post Creation", "test", key="subreddit_create", help="Type the subreddit you want to post in")
 
-    # CRUD actions dropdown
+    # CRUD actions
     action = st.selectbox("Choose an Action", ["Create Post", "Read Posts", "Update Post", "Delete Post"], key="action")
 
     # CRUD operations
@@ -203,12 +197,9 @@ if st.session_state['credentials_entered']:
                 os.remove("temp_video.mp4")
 
     elif action == "Read Posts":
-        # Input for subreddit name
         subreddit_name_read = st.text_input("Enter Subreddit Name to Read Posts", "test", key="subreddit_read", help="Type the subreddit you want to read posts from")
 
-        # Button to read posts from the subreddit
         if st.button("Read All Posts by User"):
-            # Fetch all posts by the logged-in user in the given subreddit
             posts = read_recent_posts(reddit, subreddit_name_read, limit=None, username=st.session_state['username'])
             if posts:
                 for post in posts:
@@ -227,11 +218,10 @@ if st.session_state['credentials_entered']:
             result = update_or_delete_post(reddit, "update", post_id, new_title, new_body)
             st.write(result)
 
-    # Delete Post
     elif action == "Delete Post":
         post_url = st.text_input("Post URL to Delete", key="delete_url", help="Paste the post URL here to delete")
         if post_url:
-            post_id = re.search(r"\/comments\/([^\/]+)", post_url)  # Extract post ID from URL
+            post_id = re.search(r"\/comments\/([^\/]+)", post_url)  
             if post_id:
                 post_id = post_id.group(1)
             else:
@@ -241,13 +231,13 @@ if st.session_state['credentials_entered']:
             if post_id:
                 result = update_or_delete_post(reddit, "delete", post_id)
                 if result == "Post deleted successfully":
-                    st.success(result, icon="✅")  # Green background for success
+                    st.success(result, icon="✅")  
                 else:
-                    st.error(result)  # Error message if something goes wrong
+                    st.error(result)
             else:
                 st.error("Error: Post ID extraction failed. Ensure URL is valid.")
 
-# Footer section
+# Footer
 st.markdown("""
 <div class="footer">
     Built by: Ajay Kumar 10219011621 USAR AI-ML 4th year | <a href="https://github.com/ajju-devs" target="_blank">GitHub- @ajju-devs</a>
