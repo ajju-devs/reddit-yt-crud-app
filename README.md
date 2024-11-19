@@ -2,7 +2,7 @@
 
 Welcome to the **Reddit & YouTube CRUD Application**, a project designed to interact seamlessly with Reddit and YouTube APIs, allowing users to perform CRUD operations on both platforms.
 
-This project was created as a **minor project** for my college, **USAR, Delhi (GGSIPU EDC)**, during my internship under **ProdigalAI** (Automated Socials). Below are the detailed features and implementation details of this project.
+This project was created as a **minor project** for my college, **USAR, Delhi (GGSIPU EDC)**, during my internship under **ProdigalAI** (Project- Automated Socials). Below are the detailed features and implementation details of this project.
 
 ---
 
