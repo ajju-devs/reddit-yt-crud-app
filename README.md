@@ -50,7 +50,7 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
    cd reddit-youtube-crud-app
 2. Run the application:
     ```bash
-    streamlit run app.py
+    streamlit run main.py
 3. Follow the UI to log in and start performing CRUD operations.
 
 ---
