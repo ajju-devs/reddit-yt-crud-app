@@ -40,5 +40,5 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 2. **Install Dependencies**: Run the following command to install required libraries:
    ```bash
    pip install streamlit praw google-api-python-client
-3. **Set Up Reddit API: Obtain credentials (client_id, client_secret, user_agent) from your [Reddit Developer Portal](https://www.reddit.com/prefs/apps).
-4. **Set Up YouTube API: Generate an API key from the [Google Cloud Console](https://console.cloud.google.com/).
+3. **Set Up Reddit API**: Obtain credentials (client_id, client_secret, user_agent) from your [Reddit Developer Portal](https://www.reddit.com/prefs/apps).
+4. **Set Up YouTube API**: Generate an API key from the [Google Cloud Console](https://console.cloud.google.com/).
