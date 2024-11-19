@@ -1,2 +1,5 @@
 streamlit==1.33.0
 praw==7.8.1
+google-api-python-client==2.153.0
+httplib2==0.22.0
+oauth2client==4.1.3
