@@ -56,11 +56,11 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 ---
 
 ## 📄 File Structure
-reddit-youtube-crud-app/
-│
-├── app.py                  # Main application file
-├── README.md               # Project documentation
-└── requirements.txt        # List of dependencies
+    reddit-youtube-crud-app/
+    │
+    ├── app.py                  # Main application file
+    ├── README.md               # Project documentation
+    └── requirements.txt        # List of dependencies
 
 ---
 
@@ -77,7 +77,7 @@ reddit-youtube-crud-app/
 3. Improved debugging and application management skills.
 
 ## 👦 Author
-**Ajay Kumar**
-AI-ML
-USAR, Delhi (GGSIPU EDC)
-Github Profile- [@ajju-devs](https://github.com/ajju-devs)
+- **Ajay Kumar**
+- AI-ML
+- USAR, Delhi (GGSIPU EDC)
+- Github Profile- [@ajju-devs](https://github.com/ajju-devs)
