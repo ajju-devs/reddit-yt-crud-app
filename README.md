@@ -46,11 +46,11 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 ### Steps to Run
 1. Clone the repository:
    ```bash
-    git clone https://github.com/ajju-devs/reddit-youtube-crud-app.git
+   git clone https://github.com/ajju-devs/reddit-youtube-crud-app.git
    cd reddit-youtube-crud-app
 2. Run the application:
     ```bash
-    Copy code
+    streamlit run app.py
 3. Follow the UI to log in and start performing CRUD operations.
 
 ---
