@@ -8,6 +8,10 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import tempfile
 
+st.set_page_config(
+    page_title="Reddit-YT CRUD Application",  
+)
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # for credentials and reddit instance
@@ -180,9 +184,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 if selected_section == "Reddit CRUD":
-    st.markdown('<div class="title">Reddit CRUD App Interface</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title">Reddit CRUD App Interface 🚀</div>', unsafe_allow_html=True)
 elif selected_section == "YouTube CRUD":
-    st.markdown('<div class="title" style="color: #FF0000;">YouTube CRUD App Interface</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title" style="color: #FF0000;">YouTube CRUD App Interface 🚀</div>', unsafe_allow_html=True)
 
 st.markdown('<div class="subtitle">ProdigalAI Internship Project</div>', unsafe_allow_html=True)
 st.markdown('<a href="https://github.com/ajju-devs/reddit-crud-app" target="_blank" class="link">For GitHub Repository Click Here</a>', unsafe_allow_html=True)
