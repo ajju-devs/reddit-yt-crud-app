@@ -1,8 +1,8 @@
-# Reddit & YouTube CRUD Application
+# Reddit & YouTube CRUD Application (Automated Socials)
 
 Welcome to the **Reddit & YouTube CRUD Application**, a project designed to interact seamlessly with Reddit and YouTube APIs, allowing users to perform CRUD operations on both platforms.
 
-This project was created as a **minor project** for my college, **USAR, Delhi (GGSIPU EDC)**, during my internship under **ProdigalAI**. Below are the detailed features and implementation details of this project.
+This project was created as a **minor project** for my college, **USAR, Delhi (GGSIPU EDC)**, during my internship under **ProdigalAI** (Automated Socials). Below are the detailed features and implementation details of this project.
 
 ---
 
@@ -56,10 +56,28 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 ---
 
 ## 📄 File Structure
-  ```bash
-    reddit-youtube-crud-app/
-    │
-    ├── app.py                  # Main application file
-    ├── README.md               # Project documentation
-    └── requirements.txt        # List of dependencies
+reddit-youtube-crud-app/
+│
+├── app.py                  # Main application file
+├── README.md               # Project documentation
+└── requirements.txt        # List of dependencies
 
+---
+
+## 🌟 Highlights
+1. **Interactive UI**: Easy-to-use interface for performing CRUD operations.
+2. **Customization**: Supports multiple content types for Reddit posts and detailed video metadata for YouTube.
+3. **Error Handling**: Includes informative messages and logs to guide users.
+
+---
+
+## 📚 Learning Outcomes
+1. Mastery in API integration for real-world platforms.
+2. Hands-on experience with Python libraries and Streamlit.
+3. Improved debugging and application management skills.
+
+## 👦 Author
+**Ajay Kumar**
+AI-ML
+USAR, Delhi (GGSIPU EDC)
+Github Profile- [@ajju-devs](https://github.com/ajju-devs)
