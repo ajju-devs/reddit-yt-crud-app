@@ -6,6 +6,11 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 
 ---
 
+#### 
+- Live Link: [https://crud-project.streamlit.app/](https://crud-project.streamlit.app/)
+
+---
+
 ## 📌 Features
 
 ### Reddit CRUD Operations
