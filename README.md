@@ -57,8 +57,9 @@ This project was created as a **minor project** for my college, **USAR, Delhi (G
 
 ## 📄 File Structure
   ```bash
-   reddit-youtube-crud-app/
-  │
-  ├── app.py                  # Main application file
-  ├── README.md               # Project documentation
-  └── requirements.txt        # List of dependencies
+    reddit-youtube-crud-app/
+    │
+    ├── app.py                  # Main application file
+    ├── README.md               # Project documentation
+    └── requirements.txt        # List of dependencies
+
